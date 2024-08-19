@@ -4,11 +4,12 @@ Desenvolvi uma API de um sistema de Aluguel de carros, aplicando os conhecimento
 
 Diagrama de Classes da API
 
+```mermaid
 classDiagram
-class DonoCarro {
-+String nome
-+String cpf
-}
+    class DonoCarro {
+        +String nome
+        +String cpf
+    }
 
     class Cliente {
         +String nome
@@ -32,3 +33,4 @@ class DonoCarro {
     DonoCarro "1" -- "*" Carro : possui
     Cliente "1" -- "1" Aluguel : realiza
     Aluguel "1" -- "1" Carro : participa
+```
