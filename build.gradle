@@ -29,7 +29,7 @@ dependencies {
 
 tasks.jar {
 	manifest {
-		attributes["Main Class"] = "dio.desafio.api.DesafioApiApplication"
+		attributes["Main-Class"] = "dio.desafio.api.DesafioApiApplication"
 	}
 }
 

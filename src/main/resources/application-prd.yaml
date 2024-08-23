@@ -1,0 +1,12 @@
+#  postgresql://autorack.proxy.rlwy.net:29680/railway
+spring:
+  datasource:
+    url: jdbc:postgresql://${RAILWAY_TCP_PROXY_DOMAIN}:${RAILWAY_TCP_PROXY_PORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
